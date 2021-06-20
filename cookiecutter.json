@@ -1,11 +1,11 @@
 {
-    "project_name":  "module_goes_here",
-    "project_long_name":  "3Amigos Python GitHub Template",
-    "project_description": "{{ cookiecutter.project_long_name}}",
-    "project_long_description": "A GitHub Template Repository Generated via cookiecutter from https://github.com/3amigos-dev/cookiecutter-3amigos-py it can be used via the GitHub template but using the cookiecutter repository is more complicated but provides a better outcome, see that repository for more details.\n\n![Logo](https://github.com/3amigos-dev/3amigos-py/raw/master/logo.png)\n\n",
+    "project_name":  "whatnext",
+    "project_long_name":  "What Next",
+    "project_description": "Working out the best GitHub repository to contribute to next",
+    "project_long_description": "{{ cookiecutter.project_description }}",
     "project_slug":  "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
-    "github_org": "3amigos-dev",
-    "github_repo": "3amigos-py",
+    "github_org": "timgates42",
+    "github_repo": "whatnext",
     "project_url": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.github_repo }}",
     "py_modulename":  "{{ cookiecutter.project_slug }}",
     "community_name":  "{{ cookiecutter.project_name }}",
@@ -13,8 +13,8 @@
     "docker_application_tagname": "app",
     "docker_workspace_dirname": "workspace",
     "docker_application_dirname": "{{ cookiecutter.docker_application_tagname }}",
-    "author_email": "email@goes.here",
-    "author_name": "name_goes_here",
+    "author_email": "tim.gates@iress.com",
+    "author_name": "Tim Gates",
     "maintainer_name": "{{ cookiecutter.author_name }}",
     "maintainer_email": "{{ cookiecutter.author_email }}",
     "project_email": "{{ cookiecutter.maintainer_email }}",
@@ -46,5 +46,8 @@
     "entry_points": "",
     "package_data": "",
     "extra_manifest": "",
-    "test_requires": ""
+    "test_requires": "",
+    "latest_python": "3.9",
+    "supported_python": "\"3.9\" \"3.8\" \"3.7\" \"3.6\"",
+    "extra_installs": ""
 }
