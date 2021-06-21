@@ -11,6 +11,8 @@ import re
 import click
 import requests
 
+from whatnext.storage import Repository, connect_db
+
 CONTEXT_SETTINGS = dict(help_option_names=["-h", "--help"])
 
 __version__ = "0.1"
@@ -109,8 +111,11 @@ def run_invocation():
     """
     Execute the invocation
     """
+    session = connect_db()
     for source in obtain_sources():
+        session.merge(Repository(orgrepo=source))
         print(source)
+    session.commit()
 
 
 if __name__ == "__main__":
